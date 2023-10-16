@@ -48,15 +48,8 @@ public class Student {
     )
     private String emailId;
 
-    @Column(name = "guardian_name")
-    private String guardianName;
-
-    @Column(name = "guardian_email")
-    private String guardianEmailId;
-
-    @Column(name = "guardian_phone_no")
-    private String guardianPhoneNo;
-
+    @Embedded
+    private Guardian guardian;
 
 
 }
