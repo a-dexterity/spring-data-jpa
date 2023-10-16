@@ -31,6 +31,6 @@ public interface StudentRepository extends JpaRepository<Student,Long> {
             value = "SELECT * FROM tbl_student s where s.first_name = ?1",
             nativeQuery = true
     )
-    public Student findByStudentNameJPQL(String name);
+    public Student findByStudentNameNative(String name);
 
 }
