@@ -34,6 +34,8 @@ class StudentRepositoryTest {
         studentRepository.save(student);
     }
 
+    //test functions
+
     @Test
     public void printAllStudents(){
         List<Student> studentList = studentRepository.findAll();
